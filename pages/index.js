@@ -9,19 +9,16 @@ import CallToAction from "@/components/CallToAction";
 export default function Home() {
   return (
     <div>
-      {/* Navbar */}
       <Navbar />
-      {/* Socials */}
+
       <Socials />
-      {/* Hero */}
+
       <Hero />
-      {/* Features */}
+
       <Features />
 
-      {/* CallToAction */}
       <CallToAction />
 
-      {/* Footer */}
       <Footer />
     </div>
   );

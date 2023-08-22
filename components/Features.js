@@ -42,15 +42,15 @@ export default function Features() {
               Dupin integrates your favourites management tools
             </h2>
           </div>
-          <div className="w-1/2 mt-16">
+          <div className="w-1/2 lg:mt-16">
             <div className="flex flex-col ">
-              <div className="flex gap-4 ">
+              <div className="lg:flex gap-4 ">
                 <img
-                  className="mx-auto object-contain h-80"
+                  className="mx-auto object-contain h-60 md:mt-10"
                   src={slide2A.src}
                   alt="Slide 2A"
                 />
-                <div className="flex items-center ">
+                <div className="lg:flex items-center ">
                   <img
                     className="mx-auto object-contain h-16"
                     src={slide2E.src}
@@ -58,7 +58,7 @@ export default function Features() {
                   />
                 </div>
 
-                <div className="flex flex-col justify-center gap-8 ml-6">
+                <div className="flex lg:flex-col justify-center gap-8 ml-6">
                   <div className="h-20 bg-gray-900 px-2 py-4 rounded-lg">
                     <img
                       className="mx-auto h-full object-contain"
@@ -95,43 +95,43 @@ export default function Features() {
           </h2>
           <div className="mt-4 scale-90">
             <div className="grid grid-cols-2 grid-rows-2 gap-4">
-              <div className="bg-gray-900 rounded-xl md:flex items-center">
+              <div className="bg-gray-900 rounded-xl lg:flex items-center">
                 <img
                   className="w-80 my-4  "
                   src={slide3A.src}
                   alt="Slide 3A"
                 />
-                <p className="text-white font-bold md:text-xl md:text-left p-4">
+                <p className="text-white font-bold lg:text-xl lg:text-left p-4">
                   1. Sign up.
                 </p>
               </div>
-              <div className="bg-gray-900 rounded-xl md:flex md:items-center">
+              <div className="bg-gray-900 rounded-xl lg:flex lg:items-center">
                 <img
-                  className="w-80 my-4  md:ml-4"
+                  className="w-80 my-4  lg:ml-4"
                   src={slide3B.src}
                   alt="Slide 3B"
                 />
-                <p className="text-white font-bold md:text-xl md:text-left p-4">
+                <p className="text-white font-bold lg:text-xl lg:text-left p-4">
                   2. Connect your channels.
                 </p>
               </div>
-              <div className="bg-gray-900 rounded-xl md:flex items-center">
+              <div className="bg-gray-900 rounded-xl lg:flex items-center">
                 <img
                   className="w-80 my-4"
                   src={slide3C.src}
                   alt="Slide 3C"
                 />
-                <p className="text-white font-bold md:text-xl md:text-left  p-4">
+                <p className="text-white font-bold lg:text-xl lg:text-left  p-4">
                   3. Invite your team.
                 </p>
               </div>
-              <div className="bg-gray-900 rounded-xl md:flex md:items-center">
+              <div className="bg-gray-900 rounded-xl lg:flex lg:items-center">
                 <img
-                  className="w-80 my-4 md:ml-4 mb-4"
+                  className="w-80 my-4 lg:ml-4 mb-4"
                   src={slide3D.src}
                   alt="Slide 3D"
                 />
-                <p className="text-white font-bold md:text-xl md:text-left  p-4">
+                <p className="text-white font-bold lg:text-xl lg:text-left  p-4">
                   4. Enjoy Dupin!
                 </p>
               </div>
@@ -167,7 +167,7 @@ export default function Features() {
   return (
     <div id="features" className="py-20 bg-gray-100 pb-8 min-h-screen">
       <style>{customStyles}</style>
-      <div className="container mx-auto px-4 max-w-6xl">
+      <div className="container mx-auto px-4 max-w-[400px] md:max-w-3xl lg:max-w-5xl">
         <Slider {...settings}>
           {slides.map((slide, index) => (
             <div key={index} className="text-center">
