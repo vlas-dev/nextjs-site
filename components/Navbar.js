@@ -50,7 +50,9 @@ export default function Navbar() {
             <Link href="/contact" passHref>
               <button
                 className={`hover:text-gray-800 ${
-                  router.pathname === "/contact" ? "border-b-2 border-blue-950" : ""
+                  router.pathname === "/contact"
+                    ? "border-b-2 border-blue-950"
+                    : ""
                 }`}
               >
                 Contact
@@ -60,13 +62,13 @@ export default function Navbar() {
               Log in
             </button>
           </div>
-         
+
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setShowDropdown(!showDropdown)}
               className="hover:text-gray-800 bg-gray-200 p-2 rounded-lg flex items-center space-x-1"
             >
-              {language === 'EN' ? 'EN' : 'ES'}
+              {language === "EN" ? "EN" : "ES"}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className={`h-5 w-5 transition-transform transform ${
@@ -87,11 +89,11 @@ export default function Navbar() {
               <div className="absolute top-11 left-0 bg-gray-100 border rounded-lg">
                 <button
                   onClick={() =>
-                    handleLanguageChange(language === 'EN' ? 'ES' : 'EN')
+                    handleLanguageChange(language === "EN" ? "ES" : "EN")
                   }
                   className="block px-4 py-2"
                 >
-                  {language === 'EN' ? 'Español' : 'English'}
+                  {language === "EN" ? "Español" : "English"}
                 </button>
               </div>
             )}
@@ -102,7 +104,7 @@ export default function Navbar() {
             className="lg:hidden text-gray-800  bg-gray-200 rounded-lg p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-           {mobileMenuOpen ? (
+            {mobileMenuOpen ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -138,11 +140,13 @@ export default function Navbar() {
           {/* Mobile Menu */}
           {mobileMenuOpen && (
             <div className="lg:hidden absolute top-16 right-0 bg-white w-48 border rounded-lg text-center">
-            <div className="flex flex-col space-y-4 p-4">
+              <div className="flex flex-col space-y-4 p-4">
                 <Link href="/" passHref>
                   <button
                     className={`hover:text-gray-800 ${
-                      router.pathname === "/" ? "border-b-2 border-blue-950" : ""
+                      router.pathname === "/"
+                        ? "border-b-2 border-blue-950"
+                        : ""
                     }`}
                   >
                     Home
@@ -151,20 +155,20 @@ export default function Navbar() {
                 <Link href="/contact" passHref>
                   <button
                     className={`hover:text-gray-800 ${
-                      router.pathname === "/contact" ? "border-b-2 border-blue-950" : ""
+                      router.pathname === "/contact"
+                        ? "border-b-2 border-blue-950"
+                        : ""
                     }`}
                   >
                     Contact
                   </button>
                 </Link>
                 <button className="bg-gray-800 text-white py-2 px-4 rounded-lg font-semibold">
-                Log in
+                  Log in
                 </button>
               </div>
             </div>
           )}
-
-          
         </div>
       </div>
     </nav>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import { motion } from "framer-motion";
 import { FaWhatsapp, FaInstagram, FaEnvelope } from "react-icons/fa";
@@ -6,7 +6,7 @@ import { FaWhatsapp, FaInstagram, FaEnvelope } from "react-icons/fa";
 export default function Form() {
   return (
     <div>
-        <div className="relative flex flex-col md:flex-row items-center justify-center text-gray-100 min-h-screen">
+      <div className="relative flex flex-col md:flex-row items-center justify-center text-gray-100 min-h-screen">
         <ParticlesBackground />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -18,24 +18,27 @@ export default function Form() {
             Get in touch
           </motion.p>
           <motion.p className="text-gray-100 pt-4 hidden md:block">
-            We&apos;d love to hear from you! If you have any questions or feedback,
-            please don&apos;t hesitate to reach out using the form below. Our team
-            will get back to you as soon as possible.
+            We&apos;d love to hear from you! If you have any questions or
+            feedback, please don&apos;t hesitate to reach out using the form
+            below. Our team will get back to you as soon as possible.
           </motion.p>
           <motion.div className="flex pt-4 space-x-4">
             <motion.a
               href="https://wa.me/1234567890"
-              className="hover:text-gray-200"
+              className="text-gray-500 hover:text-gray-200"
             >
               <FaWhatsapp className="inline-block mr-2 text-3xl" />
             </motion.a>
             <motion.a
               href="https://www.instagram.com/your_instagram"
-              className="hover:text-gray-200"
+              className="text-gray-500 hover:text-gray-200"
             >
               <FaInstagram className="inline-block mr-2 text-3xl" />
             </motion.a>
-            <motion.a href="mailto:contact@example.com" className="hover:text-gray-200">
+            <motion.a
+              href="mailto:contact@example.com"
+              className="text-gray-500 hover:text-gray-200"
+            >
               <FaEnvelope className="inline-block mr-2 text-3xl" />
             </motion.a>
           </motion.div>
@@ -88,7 +91,7 @@ export default function Form() {
             Submit
           </button>
         </motion.form>
-        
+
         <div
           className="absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px]"
           style={{
@@ -96,9 +99,7 @@ export default function Form() {
               "linear-gradient(45deg, rgba(192, 132, 252, 0.03) 0%, rgba(14, 165, 233, 0.08) 30%, rgba(232, 121, 249, 0.05) 70%, rgba(79, 70, 229, 0.03) 100%)",
           }}
         ></div>
-
-
       </div>
     </div>
-  )
+  );
 }

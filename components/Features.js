@@ -42,7 +42,7 @@ export default function Features() {
               Dupin integrates your favourites management tools
             </h2>
           </div>
-          <div className="w-1/2 lg:mt-16">
+          <div className="w-[500px] lg:mt-16">
             <div className="flex flex-col ">
               <div className="lg:flex gap-4 ">
                 <img
@@ -96,11 +96,7 @@ export default function Features() {
           <div className="mt-4 scale-90">
             <div className="grid grid-cols-2 grid-rows-2 gap-4">
               <div className="bg-gray-900 rounded-xl lg:flex items-center">
-                <img
-                  className="w-80 my-4  "
-                  src={slide3A.src}
-                  alt="Slide 3A"
-                />
+                <img className="w-80 my-4  " src={slide3A.src} alt="Slide 3A" />
                 <p className="text-white font-bold lg:text-xl lg:text-left p-4">
                   1. Sign up.
                 </p>
@@ -116,11 +112,7 @@ export default function Features() {
                 </p>
               </div>
               <div className="bg-gray-900 rounded-xl lg:flex items-center">
-                <img
-                  className="w-80 my-4"
-                  src={slide3C.src}
-                  alt="Slide 3C"
-                />
+                <img className="w-80 my-4" src={slide3C.src} alt="Slide 3C" />
                 <p className="text-white font-bold lg:text-xl lg:text-left  p-4">
                   3. Invite your team.
                 </p>
