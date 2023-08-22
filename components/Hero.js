@@ -35,7 +35,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="text-xl mt-16 font-medium max-w-2xl mx-auto px-4"
+          className="text-xl mt-16 font-medium mx-auto px-4"
         >
           Revolutionize your workflow with our AI-driven omnichannel solution
           that integrates multiple platforms into one seamless experience.
@@ -60,7 +60,7 @@ export default function Hero() {
         </motion.button>
       </motion.div>
       <div
-        className="absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px]"
+        className="absolute inset-0 blur-[118px] h-[800px] mx-auto sm:h-[400px]"
         style={{
           background:
             "linear-gradient(45deg, rgba(192, 132, 252, 0.03) 0%, rgba(14, 165, 233, 0.08) 30%, rgba(232, 121, 249, 0.05) 70%, rgba(79, 70, 229, 0.03) 100%)",

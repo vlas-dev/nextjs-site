@@ -18,7 +18,7 @@ export default function CallToAction() {
       <ParticlesBackground />
 
       <div
-        className="absolute inset-0 blur-[118px] max-w-lg h-[400px] mx-auto sm:max-w-3xl sm:h-[200px]"
+        className="absolute inset-0 blur-[118px] h-[400px] mx-auto"
         style={{
           background:
             "linear-gradient(45deg, rgba(192, 132, 252, 0.03) 0%, rgba(14, 165, 233, 0.08) 30%, rgba(232, 121, 249, 0.05) 70%, rgba(79, 70, 229, 0.03) 100%)",

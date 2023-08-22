@@ -3,8 +3,8 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-gray-100 text-gray-900 py-8">
-      <div className="container mx-auto px-4">
+    <footer className="bg-gray-100 text-gray-900 py-8 ">
+      <div className=" mx-auto px-4">
         <div className="flex justify-center mb-6">
           <Link href="/terms">
             <span className="mx-4 text-base hover:text-gray-100">Terms</span>
