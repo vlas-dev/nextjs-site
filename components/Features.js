@@ -28,7 +28,7 @@ export default function Features() {
       text: (
         <div className="flex flex-col items-center justify-center h-full">
           <h2 className="text-3xl font-semibold mb-2 text-center">
-            Dupin AI handles your customer's questions
+            Dupin AI handles your customer&apos;s questions
           </h2>
           <img src={slide2A.src} alt="Image 1" className="mx-auto mt-16" />
         </div>
