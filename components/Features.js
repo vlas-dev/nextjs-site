@@ -27,7 +27,7 @@ export default function Features() {
     {
       text: (
         <div className="flex flex-col items-center justify-center h-full">
-          <h2 className="text-3xl font-semibold mb-2 text-center">
+          <h2 className="text-5xl font-semibold mb-8 text-center">
             Dupin AI handles your customer&apos;s questions
           </h2>
           <img src={slide2A.src} alt="Image 1" className="mx-auto mt-16" />
@@ -38,7 +38,7 @@ export default function Features() {
       text: (
         <div className="flex flex-col items-center">
           <div className="w-3/2">
-            <h2 className="text-3xl font-semibold mb-2 ">
+            <h2 className="text-5xl font-semibold mb-8 ">
               Dupin integrates your favourites management tools
             </h2>
           </div>
@@ -90,10 +90,10 @@ export default function Features() {
     {
       text: (
         <div>
-          <h2 className="text-3xl font-semibold mb-2">
+          <h2 className="text-5xl font-semibold mb-8">
             Join Dupin in 4 simple steps
           </h2>
-          <div className="mt-4 scale-90">
+          <div className="mt-4">
             <div className="grid grid-cols-2 grid-rows-2 gap-4">
               <div className="bg-gray-900 rounded-xl lg:flex items-center">
                 <img className="w-80 my-4  " src={slide3A.src} alt="Slide 3A" />
@@ -157,9 +157,9 @@ export default function Features() {
   `;
 
   return (
-    <div id="features" className="py-20 bg-gray-100 pb-8 min-h-screen">
+    <div id="features" className="py-10 bg-gray-100 pb-8 min-h-screen">
       <style>{customStyles}</style>
-      <div className="container mx-auto px-4 max-w-[400px] md:max-w-3xl lg:max-w-5xl">
+      <div className="container mx-auto px-4 md:max-w-3xl lg:max-w-5xl  scale-75">
         <Slider {...settings}>
           {slides.map((slide, index) => (
             <div key={index} className="text-center">
