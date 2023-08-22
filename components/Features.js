@@ -27,7 +27,7 @@ export default function Features() {
     {
       text: (
         <div className="flex flex-col items-center justify-center h-full">
-          <h2 className="text-5xl font-semibold mb-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-semibold mb-8 text-center">
             Dupin AI handles your customer&apos;s questions
           </h2>
           <img src={slide2A.src} alt="Image 1" className="mx-auto mt-16" />
@@ -38,7 +38,7 @@ export default function Features() {
       text: (
         <div className="flex flex-col items-center">
           <div className="w-3/2">
-            <h2 className="text-5xl font-semibold mb-8 ">
+            <h2 className="text-4xl md:text-5xl font-semibold mb-8 ">
               Dupin integrates your favourites management tools
             </h2>
           </div>
@@ -90,7 +90,7 @@ export default function Features() {
     {
       text: (
         <div>
-          <h2 className="text-5xl font-semibold mb-8">
+          <h2 className="text-4xl md:text-5xl font-semibold mb-8">
             Join Dupin in 4 simple steps
           </h2>
           <div className="mt-4">
