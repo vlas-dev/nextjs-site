@@ -1,7 +1,5 @@
 import React from "react";
 import Slider from "react-slick";
-import { motion } from "framer-motion";
-import Image from "next/image"; // Import Image from next/image
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import slide2A from "@/assets/slide2-a.svg";
@@ -32,7 +30,7 @@ export default function Features() {
           <h2 className="text-3xl font-semibold mb-2 text-center">
             Dupin AI handles your customer's questions
           </h2>
-          <Image src={slide2A.src} alt="Image 1" className="mx-auto mt-16" />
+          <img src={slide2A.src} alt="Image 1" className="mx-auto mt-16" />
         </div>
       ),
     },
@@ -47,13 +45,13 @@ export default function Features() {
           <div className="w-1/2 mt-16">
             <div className="flex flex-col ">
               <div className="flex gap-4 ">
-                <Image
+                <img
                   className="mx-auto object-contain h-80"
                   src={slide2A.src}
                   alt="Slide 2A"
                 />
                 <div className="flex items-center ">
-                  <Image
+                  <img
                     className="mx-auto object-contain h-16"
                     src={slide2E.src}
                     alt="Slide 2E"
@@ -62,21 +60,21 @@ export default function Features() {
 
                 <div className="flex flex-col justify-center gap-8 ml-6">
                   <div className="h-20 bg-gray-900 px-2 py-4 rounded-lg">
-                    <Image
+                    <img
                       className="mx-auto h-full object-contain"
                       src={slide2B.src}
                       alt="Slide 2B"
                     />
                   </div>
                   <div className="h-20 bg-gray-900 px-2 py-4 rounded-lg">
-                    <Image
+                    <img
                       className="mx-auto h-full object-contain"
                       src={slide2C.src}
                       alt="Slide 2C"
                     />
                   </div>
                   <div className="h-20 bg-gray-900 px-2 py-4 rounded-lg">
-                    <Image
+                    <img
                       className="mx-auto h-full object-contain"
                       src={slide2D.src}
                       alt="Slide 2D"
@@ -98,7 +96,7 @@ export default function Features() {
           <div className="mt-4 scale-90">
             <div className="grid grid-cols-2 grid-rows-2 gap-4">
               <div className="bg-gray-900 rounded-xl md:flex items-center">
-                <Image
+                <img
                   className="w-80 my-4  "
                   src={slide3A.src}
                   alt="Slide 3A"
@@ -108,7 +106,7 @@ export default function Features() {
                 </p>
               </div>
               <div className="bg-gray-900 rounded-xl md:flex md:items-center">
-                <Image
+                <img
                   className="w-80 my-4  md:ml-4"
                   src={slide3B.src}
                   alt="Slide 3B"
@@ -118,7 +116,7 @@ export default function Features() {
                 </p>
               </div>
               <div className="bg-gray-900 rounded-xl md:flex items-center">
-                <Image
+                <img
                   className="w-80 my-4"
                   src={slide3C.src}
                   alt="Slide 3C"
@@ -128,7 +126,7 @@ export default function Features() {
                 </p>
               </div>
               <div className="bg-gray-900 rounded-xl md:flex md:items-center">
-                <Image
+                <img
                   className="w-80 my-4 md:ml-4 mb-4"
                   src={slide3D.src}
                   alt="Slide 3D"
@@ -145,32 +143,30 @@ export default function Features() {
   ];
 
   const customStyles = `
-  .slick-dots li button {
-    width: 20px;
-    height: 20px;
-  }
-  .slick-dots li.slick-active button {
-    background: #111827;
-    border-radius: 20%;
-  }
-
-  .slick-prev:before,
-  .slick-next:before {
-    color: #111827;
-    font-size: 32px;
-  }
-
-  .slick-prev {
-    left: -40px;
-  }
-  .slick-next {
-    right: -30px;
-`;
+    .slick-dots li button {
+      width: 20px;
+      height: 20px;
+    }
+    .slick-dots li.slick-active button {
+      background: #111827;
+      border-radius: 20%;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: #111827;
+      font-size: 32px;
+    }
+    .slick-prev {
+      left: -40px;
+    }
+    .slick-next {
+      right: -30px;
+    }
+  `;
 
   return (
     <div id="features" className="py-20 bg-gray-100 pb-8 min-h-screen">
       <style>{customStyles}</style>
-
       <div className="container mx-auto px-4 max-w-6xl">
         <Slider {...settings}>
           {slides.map((slide, index) => (
