@@ -27,7 +27,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="text-6xl md:text-7xl font-bold tracking-tight"
+          className="text-6xl md:text-6xl font-bold tracking-tight"
         >
           Transform your business with Dupin
         </motion.h1>
@@ -52,7 +52,7 @@ export default function Hero() {
         </motion.button>
         <motion.button
           initial={{ opacity: 0, y: 20 }}
-          whileInview={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
           className=" text-gray-100 mt-16 md:mt-20 py-3 px-6 rounded-lg font-semibold "
           onClick={scrollToFeatures} 
