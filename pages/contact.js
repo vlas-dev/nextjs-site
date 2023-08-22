@@ -8,14 +8,9 @@ import Footer from "@/components/Footer";
 export default function Contact() {
   return (
     <div className="relative py-28 bg-gray-900 min-h-screen">
-      
       <Navbar />
-
-
-      
-      
       <div className="relative z-10 max-w-screen-xl mx-auto text-gray-600 sm:px-4 md:px-8 flex items-center">
-      <ParticlesBackground />
+        <ParticlesBackground />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -26,8 +21,8 @@ export default function Contact() {
             Get in touch
           </motion.p>
           <motion.p className="text-gray-100 pt-4">
-            We'd love to hear from you! If you have any questions or feedback,
-            please don't hesitate to reach out using the form below. Our team
+            We&apos;d love to hear from you! If you have any questions or feedback,
+            please don&apos;t hesitate to reach out using the form below. Our team
             will get back to you as soon as possible.
           </motion.p>
           <motion.div className="flex pt-4 space-x-4">
@@ -97,16 +92,13 @@ export default function Contact() {
           </button>
         </motion.form>
         <div
-  className="absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px]"
-  style={{
-    background:
-      "linear-gradient(45deg, rgba(192, 132, 252, 0.03) 0%, rgba(14, 165, 233, 0.08) 30%, rgba(232, 121, 249, 0.05) 70%, rgba(79, 70, 229, 0.03) 100%)",
-  }}
-></div>
-
+          className="absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px]"
+          style={{
+            background:
+              "linear-gradient(45deg, rgba(192, 132, 252, 0.03) 0%, rgba(14, 165, 233, 0.08) 30%, rgba(232, 121, 249, 0.05) 70%, rgba(79, 70, 229, 0.03) 100%)",
+          }}
+        ></div>
       </div>
-    
     </div>
-    
   );
 }
