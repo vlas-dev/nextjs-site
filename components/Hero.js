@@ -37,9 +37,10 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.6 }}
           className="text-xl mt-16 font-medium mx-auto px-4"
         >
-          Revolutionize your workflow with our AI-driven omnichannel solution
-          that integrates multiple platforms into one seamless experience.
+          Revolutionize your workflow with our AI-driven omnichannel solution. <br />
+          Integrate multiple platforms into one seamless experience.
         </motion.p>
+        
 
         <motion.button
           initial={{ opacity: 0, y: 20 }}

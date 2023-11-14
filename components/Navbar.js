@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import logoImage from "@/assets/dupin-bluish.png";
+import logoImage from "@/assets/synrg.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
 

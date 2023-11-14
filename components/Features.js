@@ -2,15 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import slide2A from "@/assets/slide2-a.svg";
-import slide2B from "@/assets/slide2-b.svg";
-import slide2C from "@/assets/slide2-c.svg";
-import slide2D from "@/assets/slide2-d.svg";
-import slide2E from "@/assets/slide2-e.svg";
-import slide3A from "@/assets/slide3-a.svg";
-import slide3B from "@/assets/slide3-b.svg";
-import slide3C from "@/assets/slide3-c.svg";
-import slide3D from "@/assets/slide3-d.svg";
+
+import Image1 from "@/assets/Image1.jpeg";
+import Image2 from "@/assets/Image2.jpeg";
+import Image3 from "@/assets/Image3.jpeg";
 
 export default function Features() {
   const settings = {
@@ -21,114 +16,59 @@ export default function Features() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
+    accessibility: true, // Improved accessibility
+    responsive: [
+      // Responsive settings
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const slides = [
     {
       text: (
-        <div className="flex flex-col items-center justify-center h-full">
-          <h2 className="text-4xl md:text-5xl font-semibold mb-8 text-center">
-            Synergy AI handles your customer&apos;s questions
+        <div className="flex flex-col items-center justify-center h-screen p-4">
+          <h2 className="text-3xl lg:text-4xl font-semibold mb-4 text-center h-1/6">
+            Synergy AI handles your customer's questions
           </h2>
-          <img src={slide2A.src} alt="Image 1" className="mx-auto mt-16" />
+          <img
+            src={Image1.src}
+            alt="Image 1"
+            className="h-4/6 w-auto object-contain"
+          />
         </div>
       ),
     },
     {
       text: (
-        <div className="flex flex-col items-center">
-          <div className="w-3/2">
-            <h2 className="text-4xl md:text-5xl font-semibold mb-8 ">
-              Synergy integrates your favourites management tools
-            </h2>
-          </div>
-          <div className="w-[500px] lg:mt-16">
-            <div className="flex flex-col ">
-              <div className="lg:flex gap-4 ">
-                <img
-                  className="mx-auto object-contain h-60 md:mt-10"
-                  src={slide2A.src}
-                  alt="Slide 2A"
-                />
-                <div className="lg:flex items-center ">
-                  <img
-                    className="mx-auto object-contain h-16"
-                    src={slide2E.src}
-                    alt="Slide 2E"
-                  />
-                </div>
-
-                <div className="flex lg:flex-col justify-center gap-8 ml-6">
-                  <div className="h-20 bg-gray-900 px-2 py-4 rounded-lg">
-                    <img
-                      className="mx-auto h-full object-contain"
-                      src={slide2B.src}
-                      alt="Slide 2B"
-                    />
-                  </div>
-                  <div className="h-20 bg-gray-900 px-2 py-4 rounded-lg">
-                    <img
-                      className="mx-auto h-full object-contain"
-                      src={slide2C.src}
-                      alt="Slide 2C"
-                    />
-                  </div>
-                  <div className="h-20 bg-gray-900 px-2 py-4 rounded-lg">
-                    <img
-                      className="mx-auto h-full object-contain"
-                      src={slide2D.src}
-                      alt="Slide 2D"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="flex flex-col items-center justify-center h-screen p-4">
+          <h2 className="text-3xl lg:text-4xl font-semibold mb-4 text-center h-1/6">
+            Synergy integrates your favourites management tools
+          </h2>
+          <img
+            src={Image2.src}
+            alt="Image 2"
+            className="h-4/6 w-auto object-contain"
+          />
         </div>
       ),
     },
     {
       text: (
-        <div>
-          <h2 className="text-4xl md:text-5xl font-semibold mb-8">
-            Join Synergy in 4 simple steps
+        <div className="flex flex-col items-center justify-center h-screen p-4">
+          <h2 className="text-3xl lg:text-4xl font-semibold mb-4 text-center h-1/6">
+            Join Synergy in a few simple steps
           </h2>
-          <div className="mt-4">
-            <div className="grid grid-cols-2 grid-rows-2 gap-4">
-              <div className="bg-gray-900 rounded-xl lg:flex items-center">
-                <img className="w-80 my-4  " src={slide3A.src} alt="Slide 3A" />
-                <p className="text-white font-bold lg:text-xl lg:text-left p-4">
-                  1. Sign up.
-                </p>
-              </div>
-              <div className="bg-gray-900 rounded-xl lg:flex lg:items-center">
-                <img
-                  className="w-80 my-4  lg:ml-4"
-                  src={slide3B.src}
-                  alt="Slide 3B"
-                />
-                <p className="text-white font-bold lg:text-xl lg:text-left p-4">
-                  2. Connect your channels.
-                </p>
-              </div>
-              <div className="bg-gray-900 rounded-xl lg:flex items-center">
-                <img className="w-80 my-4" src={slide3C.src} alt="Slide 3C" />
-                <p className="text-white font-bold lg:text-xl lg:text-left  p-4">
-                  3. Invite your team.
-                </p>
-              </div>
-              <div className="bg-gray-900 rounded-xl lg:flex lg:items-center">
-                <img
-                  className="w-80 my-4 lg:ml-4 mb-4"
-                  src={slide3D.src}
-                  alt="Slide 3D"
-                />
-                <p className="text-white font-bold lg:text-xl lg:text-left  p-4">
-                  4. Enjoy Synergy!
-                </p>
-              </div>
-            </div>
-          </div>
+          <img
+            src={Image3.src}
+            alt="Image 3"
+            className="h-4/6 w-auto object-contain"
+          />
         </div>
       ),
     },
