@@ -28,7 +28,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.4 }}
           className="text-6xl md:text-6xl font-bold tracking-tight"
         >
-          Transform your business with Dupin
+          Transform your business with Synergy
         </motion.h1>
 
         <motion.p

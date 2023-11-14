@@ -31,7 +31,7 @@ export default function CallToAction() {
         animate="visible"
         className="absolute inset-0 flex flex-col items-center justify-center"
       >
-        <h2 className="text-3xl font-bold mb-4">Ready to try Dupin?</h2>
+        <h2 className="text-3xl font-bold mb-4">Ready to try Synergy?</h2>
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

@@ -20,7 +20,7 @@ function Footer() {
           </p>
           <p className="flex justify-center items-center">
             <FaEnvelope className="mr-2" />
-            Email: support@dupin.com
+            Email: support-email@synergy.com
           </p>
           <p className="flex justify-center items-center">
             <FaPhoneAlt className="mr-2" />
@@ -28,7 +28,7 @@ function Footer() {
           </p>
         </div>
         <p className="mt-6 text-gray-500 text-sm text-center">
-          © 2023 Dupin, LLC.
+          © 2023 Synergy, LLC.
         </p>
       </div>
     </footer>
