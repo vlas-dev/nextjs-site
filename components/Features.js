@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image"; // Import the Image component from 'next/image'
 
 import Image1 from "@/assets/Image1.jpeg";
 import Image2 from "@/assets/Image2.jpeg";
@@ -36,11 +37,14 @@ export default function Features() {
           <h2 className="text-3xl lg:text-4xl font-semibold mb-4 text-center h-1/6">
             Synergy AI handles your customer's questions
           </h2>
-          <img
-            src={Image1.src}
-            alt="Image 1"
-            className="h-4/6 w-auto object-contain"
-          />
+          <div>
+            <Image
+              src={Image1}
+              alt="Image 1"
+              width={500}
+             
+            />
+          </div>
         </div>
       ),
     },
@@ -48,13 +52,16 @@ export default function Features() {
       text: (
         <div className="flex flex-col items-center justify-center h-screen p-4">
           <h2 className="text-3xl lg:text-4xl font-semibold mb-4 text-center h-1/6">
-            Synergy integrates your favourites management tools
+            Synergy integrates your favorites management tools
           </h2>
-          <img
-            src={Image2.src}
-            alt="Image 2"
-            className="h-4/6 w-auto object-contain"
-          />
+          <div>
+            <Image
+              src={Image2}
+              alt="Image 2"
+              width={500}
+         
+            />
+          </div>
         </div>
       ),
     },
@@ -64,11 +71,14 @@ export default function Features() {
           <h2 className="text-3xl lg:text-4xl font-semibold mb-4 text-center h-1/6">
             Join Synergy in a few simple steps
           </h2>
-          <img
-            src={Image3.src}
-            alt="Image 3"
-            className="h-4/6 w-auto object-contain"
-          />
+          <div>
+            <Image
+              src={Image3}
+              alt="Image 3"
+              width={500}
+           
+            />
+          </div>
         </div>
       ),
     },
@@ -99,7 +109,7 @@ export default function Features() {
   return (
     <div id="features" className="py-10 bg-gray-100 pb-8 min-h-screen">
       <style>{customStyles}</style>
-      <div className="container mx-auto px-4 md:max-w-3xl lg:max-w-5xl  scale-75">
+      <div className="container mx-auto px-4 md:max-w-3xl lg:max-w-5xl scale-75">
         <Slider {...settings}>
           {slides.map((slide, index) => (
             <div key={index} className="text-center">
