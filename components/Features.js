@@ -2,8 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from "next/image"; // Import the Image component from 'next/image'
-
+import Image from "next/image"; 
 import Image1 from "@/assets/Image1.jpeg";
 import Image2 from "@/assets/Image2.jpeg";
 import Image3 from "@/assets/Image3.jpeg";
@@ -35,15 +34,10 @@ export default function Features() {
       text: (
         <div className="flex flex-col items-center justify-center h-screen p-4">
           <h2 className="text-3xl lg:text-4xl font-semibold mb-4 text-center h-1/6">
-            Synergy AI handles your customer's questions
+            Synergy AI handles your customer&apos;s questions
           </h2>
           <div>
-            <Image
-              src={Image1}
-              alt="Image 1"
-              width={500}
-             
-            />
+            <Image src={Image1} alt="Image 1" width={500} />
           </div>
         </div>
       ),
@@ -55,12 +49,7 @@ export default function Features() {
             Synergy integrates your favorites management tools
           </h2>
           <div>
-            <Image
-              src={Image2}
-              alt="Image 2"
-              width={500}
-         
-            />
+            <Image src={Image2} alt="Image 2" width={500} />
           </div>
         </div>
       ),
@@ -72,12 +61,7 @@ export default function Features() {
             Join Synergy in a few simple steps
           </h2>
           <div>
-            <Image
-              src={Image3}
-              alt="Image 3"
-              width={500}
-           
-            />
+            <Image src={Image3} alt="Image 3" width={500} />
           </div>
         </div>
       ),

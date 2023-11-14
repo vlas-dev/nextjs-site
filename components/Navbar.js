@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image"; 
 import logoImage from "@/assets/synrg.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
 
 export default function Navbar() {
   const router = useRouter();
@@ -32,7 +34,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full bg-gray-100 p-3 z-50 border-b border-gray-300">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="text-xl font-semibold">
-          <img src={logoImage.src} alt="Logo" className="h-8" />
+        <Image src={logoImage} alt="Logo" width={150} />
         </div>
 
         <div className="flex items-center space-x-4">
